@@ -1,14 +1,16 @@
-public class Main {
-
+public class UseCase2PalindromeCheckerApp {
     public static void main(String[] args) {
+        String input = "madam";
+        boolean isPalindrome = true;
 
-        showWelcomeMessage();
+        for (int i = 0; i < input.length() / 2; i++) {
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindrome = false;
+                break;
+            }
+        }
 
-    }
-
-    public static void showWelcomeMessage() {
-        System.out.println("=================================");
-        System.out.println("   WELCOME TO PALINDROME APP");
-        System.out.println("=================================");
+        System.out.println("Input text: " + input);
+        System.out.println("Is it a Palindrome? : " + isPalindrome);
     }
 }
