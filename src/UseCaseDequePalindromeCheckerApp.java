@@ -1,6 +1,4 @@
-public class UseCase3PalindromeCheckerApp {
-}
-public class UseCase3PalindromeCheckerApp {
+public class UseCaseDequePalindromeCheckerApp {
     public static void main(String[] args) {
         String input = "madam";
         String reversed = "";
